@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.bsc{
+    background-size: cover;
+}
+section{
+    padding: 100px 0 100px 0;
+}
+.ml-25{
+    margin-left: 25%;
+}
+.ml-16{
+    margin-left: 16%;
+}
+.spacer-30{
+    width: 100%;
+    height: 30px;
+    display: block;
+    clear: both;
+    padding: 0;
+}
+.spacer-60{
+    width: 100%;
+    height: 60px;
+    display: block;
+    clear: both;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-position: center;  
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------- header  -----------------------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    transition: 0.6s ease-in-out;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.header-logo{
+    padding: 7px;
+    text-align: center;
+}
+.header-logo a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #35404e;
+}
+.header-menu ul{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+.header-menu ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.header-menu ul li a{
+    margin: 15px;
+    text-decoration: none;
+    color: #35404e;
+    transition: 0.3s ease-in-out;
+}
+.header-menu ul li a:hover{
+    color: #fff;
+}
+.social-icon{
+    margin: 5px;
+    padding-left: 45px;
+}
+.social-icon i{
+    text-shadow: none;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    border-radius: 60px;
+    color: #fff;
+    background-color: #ffb135;
+    transition: 0.3s ease-in-out;
+}
+.sticky .header-menu ul li a{
+    color: #35404e;
+    transition: 0.3s ease-in-out;
+}
+.sticky .header-menu ul li a:hover{
+    color: #ffb135;
+}
+.social-icon i:hover{
+    color: #ffb135;
+    background-color: #fff;
+}
+.intro{
+    margin-left: 10%;
+}
+.line-one{
+    font-size: 32px;
+    font-weight: 700;
+    color: #35404e;
+}
+.line-tow{
+    font-size: 18px;
+    font-weight: 400;
+    color: #35404e;
+}
+.btn{
+    background-color: #ffb135;
+    color: #fff;
+    box-shadow: none;
+    transition: 0.6s ease-in-out;
+}
+.btn:hover{
+    color: #35404e;
+    background-color: #ffb135;
+}
+
+/*------------- About-Me -------------*/
+
+.about h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #35404e;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.about p{
+    margin-top: 15px;
+    color: #515c6a;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+.show-btn{
+    background-color: transparent;
+    border: 2px solid #ffb135;
+    padding: 10px 30px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.6s ease-in-out;
+}
+.show-btn:hover{
+    background-color: #ffb135;
+}
+.show-btn:hover a{
+    color: #fff;
+}
+.show-btn a {
+    color: #35404e;
+    transition: 0.6s ease-in-out;
+}
+
+/*------------- Our-Services -------------*/
+
+#Services{
+    background-color: rgb(246,247,251);
+}
+
+.head-text h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #35404e;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.head-text p{
+    margin-top: 15px;
+    color: #515c6a;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+
+.services-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+.services-icon i{
+    font-size: 36px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    margin-right: 30px;
+    min-width: 80px;
+    height: 80px;
+    border: 1px solid #ffb135;
+    border-radius: 40px;
+}
+.text-box h4{
+    font-weight: bold;
+    color: #35404e;
+}
+.text-box p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #515c6a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------- Freelancer ---------------*/
+
+.freelancer h1{
+    color: #35404e;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hire-btn{
+    background-color: #ffb135;
+    padding: 10px 30px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    color: #35404e;
+    transition: 0.6s ease-in-out;
+}
+.hire-btn a{
+    color: #35404e;
+    transition: 0.6s ease-in-out;
+}
+.hire-btn:hover a{
+    color: #fff;
+}
+
+/*-------------- Testimonials ---------------*/
+
+#Testimonials{
+    background-color: rgb(246,247,251);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+.testimonials h1{
+    color: #35404e;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.testimonials p{
+    margin-top: 15px;
+    color: #515c6a;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+.testimonials-big{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.8em;
+    font-family: 'Nunito';
+    color: #35404e;
+    padding: 0;
+    margin: 0;
+}
+.testimonials-big i{
+    color: #ffb135 !important;
+    font-size: 35px;
+}
+.testimonials-big img{
+    width: 100px !important;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+    border-radius: 60px;
+}
+.stage-itme{
+    cursor: grab;
+}
+.testimonials-big span{
+    display: block;
+    color: #35404e;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+/* .slider-dots{
+    margin-top: 20px;
+}
+.slider-dots button{
+    width: 8px;
+    height: 8px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 5px;
+    background-color:#cccccc;
+    border-radius: 30px;
+} */
+/*-------------- Portfolio ---------------*/
+
+.portfolio-head h5 span{
+    color: #ffb135;
+    font-size: 15px;
+    font-weight: bold;
+}
+.portfolio-head h1{
+    color: #35404e;
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+.portfolio-header ul{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Nunito';
+}
+.portfolio-header ul li{
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.portfolio-header ul li a{
+    color: #888;
+    background: none;
+    outline: none;
+    padding: 5px 20px 5px 20px;
+    transition: 0.6s ease-in;
+}
+.portfolio-header ul li a:hover{
+    color: #111;
+}
+.run{
+    background-color: #ffb135 !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+.gallery-item{
+    height: 300px;
+    padding: 5px 5px;
+    position: relative;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.image-text{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.overlay{
+    position: absolute;
+    width: 422px !important;
+    height: 290px !important;
+    top: 1;
+    left: 1;
+    background-color: rgba(255, 177, 53, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+.gallery-item:hover .overlay{
+    opacity: 1;
+}
+
+/*-------------- our-blog ---------------*/
+#Blog{
+    background-color: rgb(246, 247, 251);
+}
+.blog-head h1{
+    color: #35404e;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.blog-head p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #515c6a;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+.blog-img{
+    text-align: left;
+    position: relative;
+}
+.blog-img img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.post-info{
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+.post-info .inner{
+    margin: 0 30px 0 30px;
+    padding: 3px 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffb135;
+}
+.post-info .inner span{
+    color: #fff;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.blog-text{
+    padding: 10px 20px 0 30px;
+}
+.blog-text h4{
+    margin: 10px 0;
+    font-size: 16px;
+}
+.blog-text h4 a{
+    color: #1A1C26;
+    font-size: 20px;
+    font-weight: bold;
+}
+.blog-text p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #515c6a;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+/*-------------- Contact Us ---------------*/
+
+.contact-head h1{
+    color: #35404e;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contact-head p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #515c6a;
+    margin-top: 15px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+    color: #495057;
+    padding: 10px !important;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.6s;
+}
+.form-input:focus{
+    background: #f7f7f7 !important;
+    border: 2px solid #ffb135 !important;
+}
+#message{
+    height: 182px;
+}
+.hire-btn:hover{
+    color: #fff;
+}
+.icons i{
+    color: #ffb135;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.icons h6{
+    color: #ffb135;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+.icons p{
+    color: #515c6a;
+    font-size: 16px;
+    font-weight: 300;
+}
+.error{
+    color: red;
+    font-size: 16px;
+}
+/*-------------- footer ---------------*/
+
+footer{
+    background-color: #35404e;
+    color: #fff;
+    padding: 25px 0 25px 0;
+}
